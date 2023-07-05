@@ -9,14 +9,14 @@ import pyautogui
 
 # from pywinauto import Desktop, Application
 
-mail_address = ""
+mail_address = "jose-antonio.mateo-lara.external@airbus.com"
 
 
 # Ruta de la carpeta que deseas subir
-carpeta = r"C:\XXXXXX\Selenium\uploadTest"
+carpeta = r"C:\Users\JMATM96M\Desktop\Selenium\uploadTest"
 
 # Ruta del archivo chromedriver.exe
-driver_path = r"C:\XXXXXX\ChromeDriver\chromedriver.exe"
+driver_path = r"C:\Users\JMATM96M\Desktop\Selenium\ChromeDriver\chromedriver.exe"
 
 # Inicializar el navegador Chrome
 driver = webdriver.Chrome()
@@ -60,7 +60,7 @@ if "accounts.google.com/ServiceLogin" not in driver.current_url:
     logged_in = True
 
 # Navegar a la ubicación donde deseas subir la carpeta
-driver.get("https://drive.google.com/drive/folders/XXXXXXXXXXXXXXXXXXX")
+driver.get("https://drive.google.com/drive/folders/1uBXD7jK3IL4M2BbEV8-8QrX2wEJ9dGQ1")
 time.sleep(4)
 
 # Continuar con el proceso de subida de archivos si se ha iniciado sesión correctamente
